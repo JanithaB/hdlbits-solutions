@@ -9,7 +9,7 @@ module top_module(
 	
 	assign out_assign = ((sel_b1 & sel_b2) == 1'b1) ? b : a;
     always @(*) begin
-        if ((sel_b1 & sel_b2) == 1) begin
+	    if ((sel_b1 & sel_b2) == 1'b1) begin
             out_always = b;
         end
         else begin
